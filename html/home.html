@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BuyCell Store's website</title>
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+</head>
+<!--Creating body to create division and classes-->
+<body style="background-color: #e3e6f3;">
+    <!--Creating a container class inside a divison-->
+    <div class="container">
+        <!--Creating navbar class-->
+        <div class="navbar">
+            <img src="../Images/logo.png" class="logo">
+            <nav>
+                <ul>
+                    <li><a class="active" href="../html/home.html">Home</a></li>
+                    <li><a href="../html/iphones.html">iphones</a></li>
+                    <li><a href="../html/Samsung.html">Samsung</a></li>
+                    <li><a href="../html/Xiaomi.html">Xiaomi</a></li>
+                    <li><a href="../html/Research.html">Research</a></li>
+                    <li><a href="../html/Blog.html">Blog</a></li>
+                    <li><a href="../html/Login.html">Login</a></li>
+                </ul>
+            </nav>
+            <img src="../Images/cart.png" class="cart">
+        </div>
+        <!--navbar class ends-->
+
+        <!--Creating divison of row class-->
+        <div class="row">
+            <div class="col-1">
+                <h4>Make a deal with the best</h4>
+                <h2>iPhone 13 pro max</h2>
+                <h1>Your new super power</h1>
+                <p>Wanna make yours too?</p>
+                <br>
+                <a href="iphones.html"><button type="button">Shop now</button></a>
+
+            </div>
+            <div class="col-2">
+                <img src="../Images/iphone13promax.png" class="iphone13">
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-2">
+                <img src="../Images/oneplus.png" class="oneplus">
+            </div>
+
+            <div class="col-1">
+                <h3>Our biggest sale of the season</h3>
+                <br>
+                <h2>ONE PLUS</h2>
+                <br>
+                <h3>which NEVER SETTLES</h3>
+                <h4>To never miss our offers</h4>
+                <h1>Stay Connected.</h1>
+                <br>
+
+                <a href="Xiaomi.html"><button type="button">Shop now</button></a>
+
+            </div>
+        </div>
+
+
+    </div>
+    <!--Container class ends-->
+
+    <div class="scroll">
+        <div class="swiper">
+            <br><br><br><br>
+            <p style="font-family:'Courier New', Courier, monospace;font-size:50px; font-weight:bold; color: beige;" align="center">Top sale products</p>
+
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="../Images/iphone8.png" alt="Iphone 8"><span style="color: black; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 20px; ">Iphone 8</span></div>
+                <div class="swiper-slide"><img src="../Images/Mi10T.png" alt="Mi 10 T"><span style="color: black; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size: 20px">Mi 10 T</span></div>
+                <div class="swiper-slide"><img src="../Images/samsungZfold.png" alt="Samsung Z Fold"><span style="color: black; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size: 20px">Samsung Z Fold</span></div>
+                <div class="swiper-slide"><img src="../Images/pocoX3gt.png" alt="Poco X3 GT"><span style="color: black; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size: 20px">Poco X3 GT</span></div>
+                
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+
+    </div>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            loop: true,
+
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+
+        })
+    </script>
+
+    <!--Footer section starts-->
+    <footer class="foot">
+        <div class="follow">
+            <br>
+            <h4 align="center">Follow us on</h4>
+            <br>
+            <div class="icon" align="center">
+                <a href="https://www.facebook.com/"><img src="../Images/FBlogo.png" class="fblogo"></a>
+                <a href="https://www.instagram.com/"><img src="../Images/IntsaLogo.png" class="instalogo"></a>
+                <a href="https://www.twitter.com/"><img src="../Images/twitlogo.png" class="twitterlogo"></a>
+            </div>
+
+            <div class="copyright" align="center">
+                <br>
+                <p>&#169 Copyright 2021 - 2022, BuyCell. <br>All rights reserved.</p>
+                <br>
+            </div>
+        </div>
+    </footer>
+    <!--Footer section ends-->
+
+</body>
+
+</html>
